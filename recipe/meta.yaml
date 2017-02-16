@@ -1,7 +1,7 @@
 {%set name = "sphinx-argparse" %}
-{%set version = "0.1.15" %}
+{%set version = "0.1.16" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "787b4597e4bcd79495a75402e1cb242d83d8b0341fb9370187b6f77406ee8d93" %}
+{%set hash_val = "27bd90c402ad8cefd68d4ace9076a34214325c7c8d2ffe5f64b3729980aa586d" %}
 
 package:
   name: {{ name }}
@@ -38,3 +38,4 @@ about:
 extra:
   recipe-maintainers:
     - pmlandwehr
+    - croth1
