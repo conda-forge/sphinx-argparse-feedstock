@@ -13,17 +13,19 @@ source:
   {{ hash_type }}: {{ hash_val }}
 
 build:
-  number: 0
+  number: 1
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
   build:
     - python
     - setuptools
+    - commonmark>=0.5.6
     - sphinx
 
   run:
     - python
+    - commonmark>=0.5.6
     - sphinx
 
 test:
@@ -39,3 +41,4 @@ extra:
   recipe-maintainers:
     - pmlandwehr
     - croth1
+    - dpryan79
