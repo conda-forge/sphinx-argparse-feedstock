@@ -35,7 +35,7 @@ test:
 about:
   home: https://github.com/ribozz/sphinx-argparse
   license: MIT
-  summary: 'Sphinx extension that automatically document argparse commands and options'
+  summary: 'Sphinx extension that automatically documents argparse commands and options'
 
 extra:
   recipe-maintainers:
