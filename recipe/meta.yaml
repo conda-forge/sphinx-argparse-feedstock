@@ -20,12 +20,12 @@ requirements:
   build:
     - python
     - setuptools
-    - commonmark>=0.5.6
+    - commonmark >=0.5.6
     - sphinx
 
   run:
     - python
-    - commonmark>=0.5.6
+    - commonmark >=0.5.6
     - sphinx
 
 test:
