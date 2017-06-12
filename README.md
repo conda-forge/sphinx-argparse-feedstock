@@ -7,7 +7,7 @@ Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
-Summary: Sphinx extension that automatically document argparse commands and options
+Summary: Sphinx extension that automatically documents argparse commands and options
 
 
 
