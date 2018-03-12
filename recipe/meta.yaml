@@ -1,7 +1,7 @@
 {%set name = "sphinx-argparse" %}
-{%set version = "0.2.1" %}
+{%set version = "0.2.2" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "a9516bbded4fb89f4d4cbef09c74fe5b0c7bb21926f3d5b134fc6bc35e912404" %}
+{%set hash_val = "a00666c5252b303a638c80c42384deba8a2d62dd980aad7de39d0f5dc7244952" %}
 
 package:
   name: {{ name }}
@@ -13,7 +13,7 @@ source:
   {{ hash_type }}: {{ hash_val }}
 
 build:
-  number: 1
+  number: 0
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
