@@ -1,7 +1,7 @@
-{%set name = "sphinx-argparse" %}
-{%set version = "0.2.2" %}
-{%set hash_type = "sha256" %}
-{%set hash_val = "a00666c5252b303a638c80c42384deba8a2d62dd980aad7de39d0f5dc7244952" %}
+{% set name = "sphinx-argparse" %}
+{% set version = "0.2.2" %}
+{% set hash_type = "sha256" %}
+{% set hash_val = "a00666c5252b303a638c80c42384deba8a2d62dd980aad7de39d0f5dc7244952" %}
 
 package:
   name: {{ name }}
