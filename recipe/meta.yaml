@@ -1,7 +1,7 @@
 {% set name = "sphinx-argparse" %}
-{% set version = "0.2.2" %}
+{% set version = "0.2.3" %}
 {% set hash_type = "sha256" %}
-{% set hash_val = "a00666c5252b303a638c80c42384deba8a2d62dd980aad7de39d0f5dc7244952" %}
+{% set hash_val = "db4bc28d3aa81081aaa77313506e9b2eb21b76818ddfce10a6dbcb46798ec796" %}
 
 package:
   name: {{ name }}
@@ -14,7 +14,7 @@ source:
 
 build:
   noarch: python
-  number: 2
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
