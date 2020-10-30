@@ -35,6 +35,7 @@ test:
 about:
   home: https://github.com/ribozz/sphinx-argparse
   license: MIT
+  license_file: LICENSE
   summary: 'Sphinx extension that automatically documents argparse commands and options'
 
 extra:
