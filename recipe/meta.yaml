@@ -1,16 +1,13 @@
 {% set name = "sphinx-argparse" %}
 {% set version = "0.2.5" %}
-{% set hash_type = "sha256" %}
-{% set hash_val = "60ab98f80ffd38731d62e267171388a421abbc96c74901b7785a8e058b438c17" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  {{ hash_type }}: {{ hash_val }}
+  sha256: 60ab98f80ffd38731d62e267171388a421abbc96c74901b7785a8e058b438c17
 
 build:
   noarch: python
@@ -20,11 +17,10 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python =2.7|>=3.6
     - setuptools
-
   run:
-    - python
+    - python =2.7|>=3.6
     - commonmark >=0.5.6
     - sphinx
 
