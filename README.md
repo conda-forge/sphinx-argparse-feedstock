@@ -1,7 +1,7 @@
 About sphinx-argparse
 =====================
 
-Home: https://github.com/ribozz/sphinx-argparse
+Home: https://github.com/alex-rudakov/sphinx-argparse
 
 Package license: MIT
 
@@ -55,7 +55,8 @@ conda search sphinx-argparse --channel conda-forge
 About conda-forge
 =================
 
-[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
+[![Powered by
+NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](https://numfocus.org)
 
 conda-forge is a community-led conda channel of installable packages.
 In order to provide high-quality builds, the process has been automated into the
@@ -117,5 +118,4 @@ Feedstock Maintainers
 
 * [@croth1](https://github.com/croth1/)
 * [@dpryan79](https://github.com/dpryan79/)
-* [@pmlandwehr](https://github.com/pmlandwehr/)
 
