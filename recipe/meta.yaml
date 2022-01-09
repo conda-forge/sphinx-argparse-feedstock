@@ -30,7 +30,7 @@ test:
     - sphinxarg
 
 about:
-  home: https://github.com/ribozz/sphinx-argparse
+  home: https://github.com/alex-rudakov/sphinx-argparse
   license: MIT
   license_file: LICENSE
   summary: Sphinx extension that automatically documents argparse commands and options
