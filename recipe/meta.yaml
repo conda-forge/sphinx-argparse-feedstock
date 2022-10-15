@@ -1,5 +1,5 @@
 {% set name = "sphinx-argparse" %}
-{% set version = "0.3.1" %}
+{% set version = "0.3.2" %}
 
 package:
   name: {{ name }}
@@ -7,30 +7,31 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 82151cbd43ccec94a1530155f4ad34f251aaca6a0ffd5516d7fadf952d32dc1e
+  sha256: e54ad6c8f895ac6bb9d0dd9fa07e47e137a2a42ae18a714515262e86b4cc4bab
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python =2.7|>=3.6
+    - python >=3.6
     - poetry-core
     - setuptools
+
   run:
-    - python =2.7|>=3.6
+    - python >=3.6
     - commonmark >=0.5.6
-    - sphinx
+    - sphinx >=1.2
 
 test:
   imports:
     - sphinxarg
 
 about:
-  home: https://github.com/alex-rudakov/sphinx-argparse
+  home: https://github.com/ashb/sphinx-argparse
   license: MIT
   license_file: LICENSE
   summary: Sphinx extension that automatically documents argparse commands and options
