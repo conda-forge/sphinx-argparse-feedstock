@@ -1,7 +1,7 @@
 About sphinx-argparse
 =====================
 
-Home: https://github.com/alex-rudakov/sphinx-argparse
+Home: https://github.com/ashb/sphinx-argparse
 
 Package license: MIT
 
