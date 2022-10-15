@@ -18,7 +18,9 @@ requirements:
   host:
     - pip
     - python >=3.6
+    - poetry-core
     - setuptools
+
   run:
     - python >=3.6
     - commonmark >=0.5.6
