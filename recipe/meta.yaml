@@ -17,14 +17,14 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
     - poetry-core
     - setuptools
 
   run:
-    - python >=3.6
+    - python >=3.7
     - commonmark >=0.5.6
-    - sphinx >=1.2
+    - sphinx >=4.0
 
 test:
   imports:
