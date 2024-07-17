@@ -1,13 +1,17 @@
-About sphinx-argparse
-=====================
-
-Home: https://github.com/ashb/sphinx-argparse
-
-Package license: MIT
+About sphinx-argparse-feedstock
+===============================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sphinx-argparse-feedstock/blob/main/LICENSE.txt)
 
+Home: https://github.com/sphinx-doc/sphinx-argparse/
+
+Package license: MIT
+
 Summary: Sphinx extension that automatically documents argparse commands and options
+
+Development: https://github.com/sphinx-doc/sphinx-argparse/
+
+Documentation: https://sphinx-argparse.readthedocs.io/
 
 Current build status
 ====================
@@ -95,7 +99,7 @@ available continuous integration services. Thanks to the awesome service provide
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
 [Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
 it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
@@ -143,6 +147,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@conda-forge/sphinx](https://github.com/conda-forge/sphinx/)
 * [@croth1](https://github.com/croth1/)
 * [@dpryan79](https://github.com/dpryan79/)
 

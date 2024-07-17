@@ -1,42 +1,49 @@
 {% set name = "sphinx-argparse" %}
-{% set version = "0.4.0" %}
+{% set version = "0.5.0" %}
 
 package:
-  name: {{ name }}
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: e0f34184eb56f12face774fbc87b880abdb9017a0998d1ec559b267e9697e449
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sphinx_argparse-{{ version }}.tar.gz
+  sha256: 359f6cb162f5570a95ee629d979e214152b2869463f51cd4612895c18fa42b7c
 
 build:
   noarch: python
   number: 0
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
+    - python >=3.10
+    - flit-core >=3.7
     - pip
-    - python >=3.7
-    - poetry-core
-    - setuptools
-
   run:
-    - python >=3.7
+    - python >=3.10
+    - sphinx >=5.1.0
+    - docutils >=0.19
     - commonmark >=0.5.6
-    - sphinx >=4.0
 
 test:
   imports:
     - sphinxarg
+    - sphinxarg.ext
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
-  home: https://github.com/ashb/sphinx-argparse
+  home: https://github.com/sphinx-doc/sphinx-argparse/
   license: MIT
-  license_file: LICENSE
+  license_file: LICENCE.rst
   summary: Sphinx extension that automatically documents argparse commands and options
+  doc_url: https://sphinx-argparse.readthedocs.io/
+  dev_url: https://github.com/sphinx-doc/sphinx-argparse/
 
 extra:
   recipe-maintainers:
+    - conda-forge/sphinx
     - croth1
     - dpryan79
