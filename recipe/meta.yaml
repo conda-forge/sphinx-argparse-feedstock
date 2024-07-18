@@ -1,5 +1,5 @@
 {% set name = "sphinx-argparse" %}
-{% set version = "0.5.1" %}
+{% set version = "0.5.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sphinx_argparse-{{ version }}.tar.gz
-  sha256: 3b47a92d028bcb37b2e1403f3d0c1ee4101af317db98e48fbca6ceb79153b864
+  sha256: e5352f8fa894b6fb6fda0498ba28a9f8d435971ef4bbc1a6c9c6414e7644f032
 
 build:
   noarch: python
