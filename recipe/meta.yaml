@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "sphinx-argparse" %}
 {% set version = "0.5.2" %}
 
@@ -6,21 +7,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sphinx_argparse-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sphinx_argparse-{{ version }}.tar.gz
   sha256: e5352f8fa894b6fb6fda0498ba28a9f8d435971ef4bbc1a6c9c6414e7644f032
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
-    - python >=3.10
+    - python {{ python_min }}
     - flit-core >=3.7
     - pip
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - sphinx >=5.1.0
     - docutils >=0.19
     - commonmark >=0.5.6
@@ -33,6 +34,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/sphinx-doc/sphinx-argparse/
