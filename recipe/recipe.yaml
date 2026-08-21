@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.6.0"
+  version: "0.6.1"
 
 package:
   name: sphinx-argparse
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/s/sphinx-argparse/sphinx_argparse-${{ version }}.tar.gz
-  sha256: d072bb67dd52b294375f0eedc203cb8e50d0329910dbceb6764e9386bff94e9d
+  sha256: f8be167aedf5670bd7c812ef515968ff4717c63cfc9cb4df5f34b54fd5649c37
 
 build:
   number: 0
